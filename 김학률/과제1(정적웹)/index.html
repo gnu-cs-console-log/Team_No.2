@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <title>Copy Twitch</title>
+    </head>
+    <body>
+        <nav id="headerNavs">
+            <div id="headerNavsLeft">
+                <div class="imgArea">
+                    <img class="twitchLogo" src="twitch-seeklogo.com.svg" alt="트위치 로고">
+                </div>  
+                <ul>
+                    <li><a class="headerNav">팔로잉</a></li>
+                    <li><a class="headerNav">탐색</a></li>
+                    <li><a class="headerNav">e스포츠</a></li>
+                    <li><a class="headerNav">음악</a></li>
+                </ul>
+                <div class="imgArea">
+                    <img class="moreBtn" src="더보기버튼.png" alt="더보기 버튼">
+                </div> 
+            </div>
+            <div id="headerNavsMiddle">
+                <div id="searchBox">
+                    <input type="text" id="searchInput" placeholder="검색">
+                    <button id="searchBtn">
+                        <img id="searchIcon" src="돋보기.png" alt="돋보기">
+                    </button>
+                </div>
+            </div>  
+            <div id="headerNavsRight">
+                <div id="rightBox">
+                    <div class="rightIcon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="rightIcon">
+                        <i class="fas fa-inbox"></i>
+                    </div>
+                    <div class="rightIcon">
+                        <i class="far fa-comment-alt"></i>
+                    </div>
+                    <button id="bitBtn">
+                        <i class="far fa-gem"></i>
+                        비트 구매
+                    </button>
+                    <img class="profileImg" src="프사.png" alt="프사">
+                </div>
+            </div>
+        </nav>
+        <!-- 왼쪽 채널 List -->
+        <nav id="channelListNavs">
+            <div class="channelList">
+                <div class="channelListHeader">
+                    팔로우 중인 채널
+                    <i class="fas fa-long-arrow-alt-left fa-lg"></i>
+                </div>         
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/45059e9b-4b1e-4387-ba14-9a78477e6ca9-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">꽃핀 (cherrypach)</p>
+                        <p class="channelCategory">Just Chatting</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">4,885</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/0bd71b32-6417-471c-8196-d58df1a0105d-profile_image-70x70.jpg" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">오킹 (obm1025)</p>
+                        <p class="channelCategory">먹방</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">3,463</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/207caf4b-94a5-418e-a9fa-40cc1fb4a8c2-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">견자희 (wkgml)</p>
+                        <p class="channelCategory">Just Chatting</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">3,169</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/48f97eef-77c3-454f-9bf6-2d0748779a26-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">실프_ (silphtv)</p>
+                        <p class="channelCategory">League of Legends</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">2,232</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/fe75f0b7-a0a2-4dc0-bde1-edcb7a4fd32e-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">강지 (rkdwl12)</p>
+                        <p class="channelCategory">음악</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">2,032</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/d48767c9-fef7-48cf-9e10-e3baffefbb19-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">김진우 (jinu6734)</p>
+                        <p class="channelCategory">TETR.IO</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">1,770</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/21af3d33e8fdcfe9-profile_image-70x70.jpeg" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">이춘향 (leechunhyang)</p>
+                        <p class="channelCategory">Just Chatting</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">1,318</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/0f58f668-574f-4118-b1f2-ad88699da68d-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">코렛트 (collet11)</p>
+                        <p class="channelCategory">Just Chatting</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">1,123</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/ca8c078c-bb3a-4971-86ed-b720f16e82bf-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">끠끼 (kuiki771)</p>
+                        <p class="channelCategory">Just Chatting</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">928</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/1036ee28-332b-49cf-b794-e810c37e2a34-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">아구이뽀 (agueppo)</p>
+                        <p class="channelCategory">Just Chatting</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">614</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/72165aa7-59d7-4231-8d8a-5cfa75db747a-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">푸린 (rngudwnswkd)</p>
+                        <p class="channelCategory">PLAYERUNKNOWN'S BATTLEGROUNDS</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">548</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/8b90062fe78bd28b-profile_image-70x70.jpeg" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">와나나 (box930205)</p>
+                        <p class="channelCategory">Just Chatting</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">354</span>
+                    </div>
+                </div>
+            </div>
+            <span class="channelMoreBtn">더 보기</span>
+
+            <!-- 추천 채널 -->
+            <div class="channelList">
+                <div class="channelListHeader">
+                    추천 채널
+                </div>         
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/5d0bf11e-aad0-486d-bcbf-45a3e9045a0d-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">앵그리보이 (twangryboy)</p>
+                        <p class="channelCategory">음악</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">88</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/516d5bde-581d-4527-9c8d-2d131f2433ee-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">강소연 (rkdthdus930)</p>
+                        <p class="channelCategory">StarCraft</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">1,666</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/909cced3-4d36-4b39-8d52-9dea4b2d52fa-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">플레임__ (flamekr))</p>
+                        <p class="channelCategory">StarCraft</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">546</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/7a701887-d5fa-4ee8-b277-766d37d3df4b-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">LCK_Korea</p>
+                        <p class="channelCategory">League of Legends</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">3.1만</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/137f89a8-1dbc-418c-a916-0e35ca9f77a5-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">새옴 (om0322)</p>
+                        <p class="channelCategory">Just Chatting</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">534</span>
+                    </div>
+                </div>
+            </div>
+            <div class="channelList">
+                <div class="channelListBox">
+                    <img class="channelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/957eb92b5d2ecee6-profile_image-70x70.png" alt="프사">
+                    <div class="channelContents">
+                        <p class="channelName">김블루 (rainblue37)</p>
+                        <p class="channelCategory">PLAYERUNKNOWN'S BATTLEGROUNDS</p>
+                    </div>
+                    <div class="listenerBox">
+                        <span class="onAir"></span>
+                        <span class="listener">909</span>
+                    </div>
+                </div>
+            </div>
+            <span class="channelMoreBtn">더 보기</span>
+        </nav>
+        <!-- 추천 채널 -->
+        <main id="recommendChannelContainer">
+            <div class="recommendChannelHeader">
+                <div class="arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="channelPreviewContainer">
+                    <div class="channelPreview">
+                        <img src="추천 방송 미리보기 1.png" alt="썸네일">
+                        <div class="channelPreviewFront">
+                            <img src="추천 방송 미리보기 1.png" alt="썸네일">
+                        </div>
+                        <div class="channelPreviewFrontLeft">
+                            <img src="추천 방송 미리보기 2.png" alt="썸네일">
+                        </div>
+                        <div class="channelPreviewBackLeft">
+                            <img src="추천 방송 미리보기 3.png" alt="썸네일">
+                        </div>
+                        <div class="channelPreviewFrontRight">
+                            <img src="추천 방송 미리보기 3.png" alt="썸네일">
+                        </div>
+                        <div class="channelPreviewBackRight">
+                            <img src="추천 방송 미리보기 2.png" alt="썸네일">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="recommendChannelBody">
+                <header class="recommendChannelListTitle">취향 저격 생방송 채널</header>
+                <div class="recommendChannelListContainer">
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일1.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/0516dd15-5341-440b-ad6a-0ce15939f9cf-profile_image-50x50.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">쫀득) 소통</p>
+                                <p class="recommendChannelName">쫀득이_ (pjs9073)</p>
+                                <p class="channelCategory">Skul: The Hero Slayer</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일2.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/45059e9b-4b1e-4387-ba14-9a78477e6ca9-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">스타허접대회 ʕ̢̣̣·͡˔·Ɂ̡̣̣✧</p>
+                                <p class="recommendChannelName">꽃핀 (cherrypach)</p>
+                                <p class="channelCategory">Just Chatting</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일3.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4223ce80-605e-4cf6-81db-bdb19b92c35a-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">일찍켜서 할건없는데 일단 키는방송 ٩(●'▿'●)۶ *</p>
+                                <p class="recommendChannelName">탬탬버린 (2chamcham2)</p>
+                                <p class="channelCategory">StarCraft</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일4.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/207caf4b-94a5-418e-a9fa-40cc1fb4a8c2-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">허접대전 ㄷㄷㄷㄷ —̳͟͞💜</p>
+                                <p class="recommendChannelName">견자희 (wkgml)</p>
+                                <p class="channelCategory">League of Legends</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일5.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/abcbd111-cb6c-4436-a04f-15bd8f515ea3-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">월요일 방송</p>
+                                <p class="recommendChannelName">카라멜 (ca_ramel))</p>
+                                <p class="channelCategory">Just Chatting</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreLineContainer">
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                    <div class="recommendChannelMoreBtn">더 보기 <i class="fas fa-chevron-down"></i></div>
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendChannelBody">
+                <header class="recommendChannelListTitle">취향 저격 <span style="color: #a970ff">카테고리</span></header>
+                <div class="recommendCategoryListContainer">
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">Just Chatting</p>
+                                <p class="categoryListener">시청자 47.1만명</p>
+                                <span class="channelTag">리얼라이프</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/Agrou-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">Agrou</p>
+                                <p class="categoryListener">시청자 19명</p>
+                                <span class="channelTag">전략</span>
+                                <span class="channelTag">인디 게임</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">StarCraft</p>
+                                <p class="categoryListener">시청자 2.2만명</p>
+                                <span class="channelTag">RTS</span>
+                                <span class="channelTag">전략</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">League of Legend</p>
+                                <p class="categoryListener">시청자 20.7만명</p>
+                                <span class="channelTag">MOBA</span>
+                                <span class="channelTag">액션</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">PLAYERUNKNOWN'S BATTLEGROUNDS</p>
+                                <p class="categoryListener">시청자 1.2만명</p>
+                                <span class="channelTag">슈팅 장르</span>
+                                <span class="channelTag">FPS</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/Doki%20Doki%20Literature%20Club%20Plus%21-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">Doki Doki Literature Club Plus!</p>
+                                <p class="categoryListener">시청자 1,160명</p>
+                                <span class="channelTag">시뮬레이션</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/LOST%20ARK-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">LOST ARK</p>
+                                <p class="categoryListener">시청자 1.5만명</p>
+                                <span class="channelTag">RPG</span>
+                                <span class="channelTag">액션</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/Games%20+%20Demos-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">Games + Demos</p>
+                                <p class="categoryListener">시청자 1,648명</p>
+                                <span class="channelTag">퍼즐</span>
+                                <span class="channelTag">액션</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/TETR.IO-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">TETR.IO</p>
+                                <p class="categoryListener">시청자 4,637명</p>
+                                <span class="channelTag">퍼즐</span>
+                                <span class="channelTag">인디 게임</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categoryContainer">
+                        <img class="categoryThumbnail" src="https://static-cdn.jtvnw.net/ttv-boxart/Music-188x250.jpg" alt="썸네일">
+                        <div class="recommendCategoryContents">
+                            <div class="recommendCategoryText">
+                                <p class="categoryTitle">음악</p>
+                                <p class="categoryListener">시청자 2.6만명</p>
+                                <span class="channelTag">리얼라이프</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreLineContainer">
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                    <div class="recommendChannelMoreBtn">더 보기 <i class="fas fa-chevron-down"></i></div>
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                </div>
+            </div>
+
+            <header class="recommendChannelListTitle"><span style="color: #a970ff">쫀득이_</span>님이 오프라인일 때 살펴볼 곳 추천</header>
+                <div class="recommendChannelListContainer">
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일5.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/abcbd111-cb6c-4436-a04f-15bd8f515ea3-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">월요일 방송</p>
+                                <p class="recommendChannelName">카라멜 (ca_ramel))</p>
+                                <p class="channelCategory">Just Chatting</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일1.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/0516dd15-5341-440b-ad6a-0ce15939f9cf-profile_image-50x50.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">쫀득) 소통</p>
+                                <p class="recommendChannelName">쫀득이_ (pjs9073)</p>
+                                <p class="channelCategory">Skul: The Hero Slayer</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일6.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/d48767c9-fef7-48cf-9e10-e3baffefbb19-profile_image-50x50.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">[지누]</p>
+                                <p class="recommendChannelName">김진우 (jinu6734)</p>
+                                <p class="channelCategory">TETR.IO</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일3.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4223ce80-605e-4cf6-81db-bdb19b92c35a-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">일찍켜서 할건없는데 일단 키는방송 ٩(●'▿'●)۶ *</p>
+                                <p class="recommendChannelName">탬탬버린 (2chamcham2)</p>
+                                <p class="channelCategory">StarCraft</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일4.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/207caf4b-94a5-418e-a9fa-40cc1fb4a8c2-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">허접대전 ㄷㄷㄷㄷ —̳͟͞💜</p>
+                                <p class="recommendChannelName">견자희 (wkgml)</p>
+                                <p class="channelCategory">League of Legends</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreLineContainer">
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                    <div class="recommendChannelMoreBtn">더 보기 <i class="fas fa-chevron-down"></i></div>
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                </div>
+                
+                <header class="recommendChannelListTitle">추천 소규모 채널</header>
+                <div class="recommendChannelListContainer">
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일1.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/0516dd15-5341-440b-ad6a-0ce15939f9cf-profile_image-50x50.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">쫀득) 소통</p>
+                                <p class="recommendChannelName">쫀득이_ (pjs9073)</p>
+                                <p class="channelCategory">Skul: The Hero Slayer</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일4.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/207caf4b-94a5-418e-a9fa-40cc1fb4a8c2-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">허접대전 ㄷㄷㄷㄷ —̳͟͞💜</p>
+                                <p class="recommendChannelName">견자희 (wkgml)</p>
+                                <p class="channelCategory">League of Legends</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일6.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/d48767c9-fef7-48cf-9e10-e3baffefbb19-profile_image-50x50.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">[지누]</p>
+                                <p class="recommendChannelName">김진우 (jinu6734)</p>
+                                <p class="channelCategory">TETR.IO</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일3.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4223ce80-605e-4cf6-81db-bdb19b92c35a-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">일찍켜서 할건없는데 일단 키는방송 ٩(●'▿'●)۶ *</p>
+                                <p class="recommendChannelName">탬탬버린 (2chamcham2)</p>
+                                <p class="channelCategory">StarCraft</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일5.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/abcbd111-cb6c-4436-a04f-15bd8f515ea3-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">월요일 방송</p>
+                                <p class="recommendChannelName">카라멜 (ca_ramel))</p>
+                                <p class="channelCategory">Just Chatting</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreLineContainer">
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                    <div class="recommendChannelMoreBtn">더 보기 <i class="fas fa-chevron-down"></i></div>
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                </div>
+
+                <header class="recommendChannelListTitle">추천 <span style="color: #a970ff">Just Chatting</span> 채널</header>
+                <div class="recommendChannelListContainer">
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일7.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/134ecdfb-6bd9-4909-b971-e6ebb1d6fafb-profile_image-50x50.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">교양방송이고 나발이고 조진것같습니다만</p>
+                                <p class="recommendChannelName">라디유 (radiyu)</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일4.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/207caf4b-94a5-418e-a9fa-40cc1fb4a8c2-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">허접대전 ㄷㄷㄷㄷ —̳͟͞💜</p>
+                                <p class="recommendChannelName">견자희 (wkgml)</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일2.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/45059e9b-4b1e-4387-ba14-9a78477e6ca9-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">스타허접대회 ʕ̢̣̣·͡˔·Ɂ̡̣̣✧</p>
+                                <p class="recommendChannelName">꽃핀 (cherrypach)</p>
+                                <p class="channelCategory">Just Chatting</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일5.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/abcbd111-cb6c-4436-a04f-15bd8f515ea3-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">월요일 방송</p>
+                                <p class="recommendChannelName">카라멜 (ca_ramel))</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channelContainer">
+                        <img class="channelThumbnail" src="썸네일3.png" alt="썸네일">
+                        <div class="recommendChannelContents">
+                            <img class="recommendChannelProfileImg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4223ce80-605e-4cf6-81db-bdb19b92c35a-profile_image-70x70.png" alt="프사">
+                            <div class="recommendChannelText">
+                                <p class="channelTitle">일찍켜서 할건없는데 일단 키는방송 ٩(●'▿'●)۶ *</p>
+                                <p class="recommendChannelName">탬탬버린 (2chamcham2)</p>
+                                <span class="channelTag">한국어</span>
+                            </div>
+                            <div class="recommendMenu">
+                                <i class="fas fa-ellipsis-v fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreLineContainer">
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                    <div class="recommendChannelMoreBtn">더 보기 <i class="fas fa-chevron-down"></i></div>
+                    <div class="moreLineBox">
+                        <hr size="1px" color="#29292e"; class="moreLine"></hr>
+                    </div>
+                </div>
+        </main>
+
+    </body>
+</html>

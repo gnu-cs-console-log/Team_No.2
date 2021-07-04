@@ -1,0 +1,458 @@
+body {
+    margin-top: 50px;
+    margin-left: 240px;
+    background-color: #0e0e10;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* 헤더 */
+#headerNavs {
+    position: fixed ;
+    background-color: #18181b;
+    display: flex;
+    width: 100%;
+    height: 50px; 
+    top: 0; 
+    left: 0;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+#headerNavsLeft {
+    flex: 1;
+    display: flex;
+}
+
+.imgArea {
+    width: 50px;
+    height: 50px;  
+    margin-right: 15px;
+    text-align: center;
+}
+
+.imgArea::after{display:inline-block; height:100%; content:""; vertical-align:middle;}
+
+.twitchLogo {
+    width: 30px;
+    height: 100%;  
+    vertical-align: middle;
+}
+
+#headerNavs ul {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    padding-left: 0px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#headerNavs ul li {
+    list-style: none;
+    color: #efeff1;
+    align-self: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#headerNavs ul li:hover {
+    color: #a970ff;
+}
+
+.moreBtn {
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#headerNavsMiddle {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#searchBox {
+    width: 390px;
+    margin: auto 0;
+    display: flex;
+}
+
+#searchInput {
+    width: 100%;
+    height: 36px;
+    padding-left: 0.8rem;
+    border-radius: 0.6rem 0px 0px 0.6rem;
+    border-style: none;
+    background-color: #FFFFFF33;
+}
+
+#searchInput::placeholder {
+    color: #ffffff8f;
+    font-size: 15px;
+}
+
+#searchInput:focus {
+    outline: 2px solid #a970ff;
+    background-color: black;
+}
+
+#searchBtn {
+    width: 34px;
+    height: 38px;
+    margin-left: 1px;
+    background-color: #FFFFFF26;
+    border-style: none;
+    border-radius: 0px 0.6rem 0.6rem 0px;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background-color: #FFFFFF33;
+}
+
+#searchIcon {
+    width: 25px;
+    height: 25px;
+}
+
+#headerNavsRight {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#rightBox {
+    display: flex;
+    align-items: center;    
+}
+
+.rightIcon {
+    color: white;
+    margin-right: 20px;
+}
+
+#bitBtn {
+    width: 98px;
+    height: 30px;
+    margin-right: 10px;
+    border-style: none;
+    border-radius: 0.4rem;
+    background-color: #FFFFFF33;
+    color: white;
+    font-weight: bold;
+}
+
+.profileImg {
+    margin-right: 10px;
+}
+
+/* 왼쪽 navs */
+#channelListNavs {
+    width: 220px;
+    padding: 0px 10px;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    background-color: #202024;
+    position: fixed;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+#channelListNavs::-webkit-scrollbar {
+    display: none;
+}
+
+.channelList {
+    align-items: center;
+}
+
+.channelListHeader {
+    height: 44px;
+    color: #efeff1;
+    padding-right: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channelListBox {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.channelListBox:hover {
+    background-color: #25252b;
+}
+
+.channelProfileImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 10rem;
+}
+
+.channelContents {
+    width: 121px;
+    margin-left: 10px;
+    margin-right: 5px;
+    
+}
+
+.channelName,
+.channelTitle,
+.categoryTitle {
+    color: #dedee3;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.channelCategory,
+.recommendChannelName,
+.categoryListener {
+    color: #adadb8;
+    font-size: 13px;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.listenerBox {
+    margin-left: 5px;
+    display: flex;
+}
+
+.onAir {
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+    background-color: #e91916;
+    border-radius: 10rem;
+}
+
+.listener {
+    margin-left: 5px;
+    color: #dedee3;
+    font-size: 13px;
+}
+
+.channelMoreBtn {
+    color: #a970ff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.channelMoreBtn:hover {
+    border-bottom: 1px solid #a970ff;
+}
+
+/* 메인 화면 */
+#recommendChannelContainer {
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.recommendChannelHeader {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 36px 1fr 36px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.arrow {
+    width: 36px;
+    line-height: 36px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    border-radius: 5px;
+    background-color: #3c3c44;
+}
+
+.channelPreview {
+    position: relative;
+    text-align: center;
+}
+
+.channelPreviewFront {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+}
+
+.channelPreviewFrontLeft {
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    width: 70%;
+    z-index: 2;
+}
+
+.channelPreviewFrontLeft img {
+    height: 100%;
+}
+
+.channelPreviewBackLeft {
+    position: absolute;
+    top: 20%;
+    height: 60%;
+    width: 40%;
+    z-index: 1;
+}
+
+.channelPreviewBackLeft img {
+    height: 100%;
+}
+
+.channelPreviewFrontRight {
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    height: 80%;
+    width: 70%;
+    z-index: 2;
+}
+
+.channelPreviewFrontRight img {
+    height: 100%;
+}
+
+.channelPreviewBackRight {
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    height: 60%;
+    width: 40%;
+    z-index: 1;
+}
+
+.channelPreviewBackRight img {
+    height: 100%;
+}
+
+.recommendChannelBody {
+    margin-top: 20px;
+}
+
+.recommendChannelListTitle {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.recommendChannelListContainer,
+.recommendCategoryListContainer {
+    display: flex;
+}
+
+.channelContainer {
+    width: 316px;
+    padding-right: 0.5rem;
+}
+
+.recommendChannelContents {
+    display: grid;
+    grid-template-columns: 50px 239px 24px;
+}
+
+.channelThumbnail {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.recommendChannelProfileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 10rem;
+}
+
+.channelTag {
+    display: inline-block;
+    padding: 2px 10px;
+    margin-top: 5px;
+    color: #ffffffb3;
+    background-color: #29292e;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.recommendMenu {
+    width: 24px;
+    height: 24px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.recommendMenu:hover {
+    border-radius: 5px;
+    background-color: #3c3c44;
+}
+
+.moreLineContainer {
+    margin: 20px 0px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 87px 1fr;
+    vertical-align: middle;
+}
+
+.moreLineBox {
+    padding-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.moreLine {
+    width: 100%;
+}
+
+.recommendChannelMoreBtn {
+    color: #a970ff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.recommendChannelMoreBtn:hover {
+    border-radius: 5px;
+    background-color: #3c3c44;
+}
+
+.categoryContainer {
+    width: 153px;
+    margin-right: 0.5rem;
+}
+
+.categoryThumbnail {
+    width: 100%;
+}
+
+.recommendCategoryContents {
+    display: grid;
+    grid-template-columns: 129px 24px;
+}
+
+h1 {
+    color: red;
+}
