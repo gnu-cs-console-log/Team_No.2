@@ -1,0 +1,29 @@
+.title1{
+    color:darkblue;
+}
+
+.a{
+    color:lightgray;
+}
+
+EM {
+    font-style:normal;
+    background-color:yellow;
+}
+
+.dog{
+    padding-left:10px;
+}
+
+.hobbytitle{
+    color:deepskyblue;
+    padding-top:10px;
+}
+
+.etctitle {
+    color: plum;
+    padding-top: 10px;
+}
+body {
+    background-color: lavender;
+}
