@@ -2,8 +2,8 @@ import React from 'react';
 
 import './App.css';
 import Header from './components/Header/Header';
-import Main from './components/Main';
-import ChannelList from './components/LeftChannelList';
+import Main from './components/Main/Main';
+import ChannelList from './components/LeftChannelList/LeftChannelList';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -16,8 +16,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Main/>
       <ChannelList/>
+      <Main/>
     </div>
   );
 }

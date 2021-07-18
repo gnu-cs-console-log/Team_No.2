@@ -1,0 +1,37 @@
+.channelListNavs {
+    width: 220px;
+    padding: 0px 10px;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    background-color: #202024;
+    position: fixed;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.channelListNavs::-webkit-scrollbar {
+    display: none;
+}
+
+.channelListHeader {
+    height: 44px;
+    color: #efeff1;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channelMoreBtn {
+    padding: 0;
+    color: #a970ff;
+    font-size: 12px;
+    border: 0px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.channelMoreBtn:hover {
+    border-bottom: 1px solid #a970ff;
+}
