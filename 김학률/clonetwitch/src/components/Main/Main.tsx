@@ -17,31 +17,7 @@ import RecommendCategoryBox from './RecommendCategoryBox'
 export default function Main() {
     return (
         <main className="recommendChannelBody">
-            <header className="recommendChannelHeader">
-                <button className="bigIconBtn">
-                    <FontAwesomeIcon className="iconFont" icon="chevron-left" size="lg"/>
-                </button>
-                <div className="channelPreview">
-                    <div className="channelPreviewFront">
-                        <img src={PreviewImg1} alt="썸네일"/>
-                    </div>
-                    <div className="channelPreviewFrontLeft">
-                        <img src={PreviewImg2} alt="썸네일"/>
-                    </div>
-                    <div className="channelPreviewBackLeft">
-                        <img src={PreviewImg3} alt="썸네일"/>
-                    </div>
-                    <div className="channelPreviewFrontRight">
-                        <img src={PreviewImg3} alt="썸네일"/>
-                    </div>
-                    <div className="channelPreviewBackRight">
-                        <img src={PreviewImg2} alt="썸네일"/>
-                    </div>
-                </div>
-                <button className="bigIconBtn">
-                    <FontAwesomeIcon className="iconFont" icon="chevron-right" size="lg"/>
-                </button>
-            </header>
+            <MainHeader />
             <RecommendChannelBox
                 headerName="취향 저격 생방송 채널"
                 channelList={recommendChannelList}
@@ -63,6 +39,36 @@ export default function Main() {
                 channelList={recommendChannelList}
             />
         </main>
+    )
+}
+
+const MainHeader = () => {
+    return (
+        <header className="recommendChannelHeader">
+            <button className="bigIconBtn">
+                <FontAwesomeIcon className="iconFont" icon="chevron-left" size="lg"/>
+            </button>
+            <div className="channelPreview">
+                <div className="channelPreviewFront">
+                    <img src={PreviewImg1} alt="썸네일"/>
+                </div>
+                <div className="channelPreviewFrontLeft">
+                    <img src={PreviewImg2} alt="썸네일"/>
+                </div>
+                <div className="channelPreviewBackLeft">
+                    <img src={PreviewImg3} alt="썸네일"/>
+                </div>
+                <div className="channelPreviewFrontRight">
+                    <img src={PreviewImg3} alt="썸네일"/>
+                </div>
+                <div className="channelPreviewBackRight">
+                    <img src={PreviewImg2} alt="썸네일"/>
+                </div>
+            </div>
+            <button className="bigIconBtn">
+                <FontAwesomeIcon className="iconFont" icon="chevron-right" size="lg"/>
+            </button>
+        </header>
     )
 }
 

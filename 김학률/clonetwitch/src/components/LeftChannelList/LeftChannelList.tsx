@@ -8,40 +8,52 @@ import { SmallChannelCard } from '../common/ChannelCard/ChannelCard';
 export default function LeftNav() {
     return (
         <aside className="channelListNavs">
-            <section className="leftChannelContainer">
-                <div className="channelListHeader">
-                    팔로우 중인 채널
-                    <button className="bigIconBtn"><FontAwesomeIcon className="iconFont" icon="arrow-left" size="1x"/></button>
-                </div>
-                {followChannelList.map((followChannel) => {
-                    return (<SmallChannelCard 
-                        key={followChannel.name}
-                        profile={followChannel.src}
-                        name={followChannel.name}
-                        ID={followChannel.ID}
-                        category={followChannel.category}
-                        listener={followChannel.listener}
-                    />)
-                })}    
-                <button className="channelMoreBtn">더 보기</button>   
-            </section>
-            <section className="leftChannelContainer">
-                <div className="channelListHeader">
-                    추천 채널
-                </div>
-                {recommendChannelList.map((recommendChannel) => {
-                    return (<SmallChannelCard 
-                        key={recommendChannel.name}
-                        profile={recommendChannel.src}
-                        name={recommendChannel.name}
-                        ID={recommendChannel.ID}
-                        category={recommendChannel.category}
-                        listener={recommendChannel.listener}
-                    />)
-                })}    
-                <button className="channelMoreBtn">더 보기</button> 
-            </section>
+            <ChannelList
+                headerName="팔로우 중인 채널"
+                channelList={followChannelList}
+            />
+            <ChannelList
+                headerName="추천 채널"
+                channelList={recommendChannelList}
+            />
         </aside>
+    )
+}
+
+interface ChannelType {
+    src: string;
+    name: string;
+    ID: string;
+    category: string;
+    listener?: number;
+}
+
+interface ChannelListType {
+    headerName: string;
+    channelList: Array<ChannelType>;
+}
+
+const ChannelList = ({headerName, channelList}: ChannelListType) => {
+    return (
+        <section className="leftChannelContainer">
+            <div className="channelListHeader">
+                {headerName}
+                <button className="bigIconBtn"><FontAwesomeIcon className="iconFont" icon="arrow-left" size="1x"/></button>
+            </div>
+            {channelList.map((Channel) => {
+                return (
+                    <SmallChannelCard 
+                        key={Channel.name}
+                        profile={Channel.src}
+                        name={Channel.name}
+                        ID={Channel.ID}
+                        category={Channel.category}
+                        listener={Channel.listener}
+                    />
+                )
+            })}    
+            <button className="channelMoreBtn">더 보기</button>   
+        </section>
     )
 }
 
