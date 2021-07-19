@@ -1,0 +1,32 @@
+.categoryContainer {
+    width: 153px;
+    margin-right: 0.5rem;
+}
+
+.categoryThumbnail {
+    width: 100%;
+}
+
+.recommendCategoryContents {
+    display: grid;
+    grid-template-columns: 129px 24px;
+}
+
+.categoryTitle {
+    color: #dedee3;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.categoryListener {
+    color: #adadb8;
+    font-size: 13px;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

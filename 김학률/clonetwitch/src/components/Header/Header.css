@@ -1,0 +1,144 @@
+.container {
+    position: fixed;
+    background-color: #18181b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 50px; 
+    top: 0; 
+    left: 0;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.headerNavLeft {
+    display: flex;
+}
+
+.imgArea {
+    width: 50px;
+    height: 50px;  
+    margin-right: 15px;
+    text-align: center;
+}
+
+/* .imgArea::after{display:inline-block; height:100%; content:""; vertical-align:middle;} */
+
+.twitchLogo {
+    width: 30px;
+    height: 100%;  
+    vertical-align: middle;
+}
+
+.headerNavLeftUl {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    padding-left: 0px;
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    align-items: center;
+}
+
+.headerNav {
+    list-style: none;
+
+}
+.headerNav a{
+    color: #efeff1;
+    align-self: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration:none
+}
+
+.headerNav a:hover {
+    color: #a970ff;
+}
+
+.moreBtn {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.moreBtn:hover {
+    border-radius: 5px;
+    background-color: #3c3c44;
+}
+.moreBtnIcon {
+    color: white;
+}
+
+.headerNavMiddle {
+    display: flex;
+    justify-content: center;
+}
+.searchBox {
+    width: 390px;  
+    margin: auto 0;
+    display: flex;
+}
+.searchInput {
+    width: 100%;
+    height: 36px;
+    padding-left: 0.8rem;
+    border-radius: 0.6rem 0px 0px 0.6rem;
+    border-style: none;
+    background-color: #FFFFFF33;
+}
+.searchInput::placeholder {
+    color: #ffffff8f;
+    font-size: 15px;
+}
+.searchInput:focus {
+    outline: 2px solid #a970ff;
+    background-color: black;
+}
+.searchBtn {
+    width: 34px;
+    height: 38px;
+    margin-left: 1px;
+    background-color: #FFFFFF26;
+    border-style: none;
+    border-radius: 0px 0.6rem 0.6rem 0px;
+    cursor: pointer;
+}
+.searchBtn:hover {
+    background-color: #FFFFFF33;
+}
+.searchBtnIcon {
+    width: 25px;
+    height: 25px;
+    color: #ffffff8f;
+}
+
+.headerNavRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.rightBox {
+    display: flex;
+    align-items: center;    
+}
+.rightIcon {
+    color: white;
+    margin-right: 20px;
+}
+.bitBtn {
+    width: 98px;
+    height: 30px;
+    margin-right: 10px;
+    border-style: none;
+    border-radius: 0.4rem;
+    background-color: #FFFFFF33;
+    color: white;
+    font-weight: bold;
+}
+.bitBtnIcon {
+    margin-right: 5px;
+}

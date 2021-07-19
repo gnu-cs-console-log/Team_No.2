@@ -1,0 +1,79 @@
+.channelListBox {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.channelListBox:hover {
+    background-color: #25252b;
+}
+
+.channelProfileImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 10rem;
+}
+
+.channelContents {
+    width: 121px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.channelName,
+.channelTitle {
+    color: #dedee3;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.channelCategory,
+.recommendChannelName {
+    color: #adadb8;
+    font-size: 13px;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.listenerBox {
+    margin-left: 5px;
+    display: flex;
+}
+.onAir {
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+    background-color: #e91916;
+    border-radius: 10rem;
+}
+.listener {
+    margin-left: 5px;
+    color: #dedee3;
+    font-size: 14px;
+}
+
+.channelContainer {
+    width: 316px;
+    padding-right: 0.5rem;
+}
+.channelThumbnail {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.recommendChannelContents {
+    display: grid;
+    grid-template-columns: 50px 239px 24px;
+}
+.recommendChannelProfileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 10rem;
+}

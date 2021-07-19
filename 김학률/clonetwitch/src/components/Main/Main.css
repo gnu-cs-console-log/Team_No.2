@@ -1,0 +1,136 @@
+.recommendChannelBody {
+    margin-top: 50px;
+    margin-left: 240px;
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: #0e0e10;
+}
+.recommendChannelBody::-webkit-scrollbar {
+    display: none;
+}
+
+.recommendChannelHeader {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 36px 1fr 36px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.arrow {
+    width: 36px;
+    line-height: 36px;
+    color: white;
+    cursor: pointer;
+}
+.arrow:hover {
+    border-radius: 5px;
+    background-color: #3c3c44;
+}
+.channelPreview {
+    height: 300px;
+    position: relative;
+    text-align: center;
+}
+.channelPreviewFront {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+}
+.channelPreviewFrontLeft {
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    width: 70%;
+    z-index: 2;
+}
+.channelPreviewFrontLeft img {
+    height: 100%;
+}
+.channelPreviewBackLeft {
+    position: absolute;
+    top: 20%;
+    height: 60%;
+    width: 40%;
+    z-index: 1;
+}
+.channelPreviewBackLeft img {
+    height: 100%;
+}
+.channelPreviewFrontRight {
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    height: 80%;
+    width: 70%;
+    z-index: 2;
+}
+.channelPreviewFrontRight img {
+    height: 100%;
+}
+.channelPreviewBackRight {
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    height: 60%;
+    width: 40%;
+    z-index: 1;
+}
+.channelPreviewBackRight img {
+    height: 100%;
+}
+
+.recommendChannelContainer,
+.recommendCategoryContainer {
+    margin-top: 20px;
+}
+.recommendChannelListTitle,
+.recommendCategoryListTitle {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.recommendChannelListContainer,
+.recommendCategoryListContainer {
+    display: flex;
+}
+
+.moreLineContainer {
+    margin: 20px 0px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 87px 1fr;
+    vertical-align: middle;
+}
+.moreLineBox {
+    padding-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.moreLine {
+    width: 100%;
+}
+.recommendChannelMoreBtn {
+    color: #a970ff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.recommendChannelMoreBtn:hover {
+    border-radius: 5px;
+    background-color: #3c3c44;
+}
+
+.channelTag {
+    display: inline-block;
+    padding: 2px 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: #ffffffb3;
+    background-color: #29292e;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
