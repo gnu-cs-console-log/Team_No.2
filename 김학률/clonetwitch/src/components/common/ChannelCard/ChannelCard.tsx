@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import styles from '../../style.module.css'
 import "./ChannelCard.css"
-
 
 interface ChannelCardType {
     thumnail?: string;
@@ -47,27 +45,9 @@ export const PriviewChannelCard = (channelCard: ChannelCardType) => {
                         )
                     })}  
                 </div>
-                <div className="recommendMenu">
-                    <button className={styles.smallIconBtn}><FontAwesomeIcon className={styles.iconFont} icon="ellipsis-v"/></button>
-                </div>
+                <button className="smallIconBtn"><FontAwesomeIcon className="iconFont" icon="ellipsis-v"/></button>
             </div>
         </div>
     )
 }
 
-interface channelListType {
-    channelList: Array<object>
-}
-
-export const RecommendChannelBox = (channelList: channelListType) => {
-    return (
-        <section className="recommendChannelContainer">
-            <header className="recommendChannelListTitle"></header>
-            <article className="recommendChannelListContainer">
-                {channelList.channelList.map((channel) => {
-
-                })}
-            </article>
-        </section>
-    )
-}

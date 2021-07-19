@@ -23,8 +23,7 @@
 }
 
 .channelName,
-.channelTitle,
-.categoryTitle {
+.channelTitle {
     color: #dedee3;
     font-weight: bold;
     font-size: 14px;
@@ -35,8 +34,7 @@
 }
 
 .channelCategory,
-.recommendChannelName,
-.categoryListener {
+.recommendChannelName {
     color: #adadb8;
     font-size: 13px;
     margin: 0px;
@@ -78,26 +76,4 @@
     width: 40px;
     height: 40px;
     border-radius: 10rem;
-}
-.channelTag {
-    display: inline-block;
-    padding: 2px 10px;
-    margin-top: 5px;
-    color: #ffffffb3;
-    background-color: #29292e;
-    border-radius: 10px;
-    font-size: 12px;
-    font-weight: bold;
-}
-.recommendMenu {
-    width: 24px;
-    height: 24px;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-}
-
-.recommendMenu:hover {
-    border-radius: 5px;
-    background-color: #3c3c44;
 }

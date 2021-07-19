@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import styles from '../style.module.css'
+// import styles from '../style.module.css'
 import './LeftChannelList.css'
 
 import { SmallChannelCard } from '../common/ChannelCard/ChannelCard';
@@ -11,7 +11,7 @@ export default function LeftNav() {
             <section className="leftChannelContainer">
                 <div className="channelListHeader">
                     팔로우 중인 채널
-                    <button className={styles.bigIconBtn}><FontAwesomeIcon className={styles.iconFont} icon="arrow-left" size="1x"/></button>
+                    <button className="bigIconBtn"><FontAwesomeIcon className="iconFont" icon="arrow-left" size="1x"/></button>
                 </div>
                 {followChannelList.map((followChannel) => {
                     return (<SmallChannelCard 

@@ -1,9 +1,3 @@
-.smallIconBtn:hover
-.bigIconBtn:hover {
-    border-radius: 5px;
-    background-color: #3c3c44;
-}
-
 .bigIconBtn {
     width: 30px;
     height: 30px;
@@ -17,6 +11,12 @@
     border: 0px;
     background-color: transparent;
     cursor: pointer;
+}
+
+.smallIconBtn:hover,
+.bigIconBtn:hover {
+    border-radius: 5px;
+    background-color: #3c3c44;
 }
 
 .iconFont {

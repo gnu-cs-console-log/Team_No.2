@@ -79,10 +79,12 @@
     height: 100%;
 }
 
-.recommendChannelContainer {
+.recommendChannelContainer,
+.recommendCategoryContainer {
     margin-top: 20px;
 }
-.recommendChannelListTitle {
+.recommendChannelListTitle,
+.recommendCategoryListTitle {
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -92,4 +94,43 @@
 .recommendChannelListContainer,
 .recommendCategoryListContainer {
     display: flex;
+}
+
+.moreLineContainer {
+    margin: 20px 0px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 87px 1fr;
+    vertical-align: middle;
+}
+.moreLineBox {
+    padding-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.moreLine {
+    width: 100%;
+}
+.recommendChannelMoreBtn {
+    color: #a970ff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.recommendChannelMoreBtn:hover {
+    border-radius: 5px;
+    background-color: #3c3c44;
+}
+
+.channelTag {
+    display: inline-block;
+    padding: 2px 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: #ffffffb3;
+    background-color: #29292e;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
 }
